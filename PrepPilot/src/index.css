@@ -669,3 +669,297 @@ button, input {
     display: none;
   }
 }
+
+/* DSA TRACKER */
+
+.dsa-page {
+  animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dsa-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dsa-heading h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.dsa-heading h1 svg {
+  color: #818cf8;
+}
+
+.dsa-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.dsa-stat {
+  background: #131e30;
+  border: 1px solid #26344b;
+  border-radius: 12px;
+  padding: 19px;
+}
+
+.dsa-stat > span {
+  display: block;
+  color: #91a0b8;
+  font-size: 11px;
+  margin-top: 13px;
+}
+
+.dsa-stat h2 {
+  font-size: 25px;
+  margin: 8px 0 0;
+  font-weight: 700;
+}
+
+.dsa-stat .stat-icon svg {
+  width: 19px;
+}
+
+.difficulty-overview {
+  margin-bottom: 20px;
+}
+
+.difficulty-overview h5,
+.add-problem-form h5 {
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.difficulty-bars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.difficulty-item .progress-label {
+  margin-bottom: 10px;
+}
+
+.add-problem-form {
+  margin-bottom: 20px;
+}
+
+.dsa-input {
+  width: 100%;
+  background: #0d1728;
+  color: #e5eaf5;
+  border: 1px solid #34435a;
+  border-radius: 8px;
+  padding: 11px 13px;
+  outline: none;
+  font-size: 12px;
+  margin-bottom: 13px;
+}
+
+.dsa-input:focus {
+  border-color: #818cf8;
+}
+
+.dsa-input option,
+.dsa-filters select option {
+  background: #131e30;
+  color: white;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.form-row .primary-button {
+  min-height: 39px;
+}
+
+.problems-card {
+  overflow: hidden;
+}
+
+.dsa-filters {
+  display: flex;
+  gap: 10px;
+  margin: 22px 0;
+  flex-wrap: wrap;
+}
+
+.dsa-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  min-width: 180px;
+  background: #0d1728;
+  border: 1px solid #34435a;
+  border-radius: 8px;
+  padding: 0 11px;
+  color: #8491a8;
+}
+
+.dsa-search input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 11px;
+}
+
+.dsa-filters select {
+  background: #0d1728;
+  color: #cbd5e1;
+  border: 1px solid #34435a;
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-size: 11px;
+  outline: none;
+  min-width: 100px;
+}
+
+.problem-table-wrap {
+  overflow-x: auto;
+}
+
+.problem-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.problem-table th {
+  color: #8190a8;
+  font-size: 9px;
+  letter-spacing: .8px;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 12px;
+  border-bottom: 1px solid #29374c;
+}
+
+.problem-table td {
+  padding: 15px 12px;
+  color: #d4dcec;
+  font-size: 11px;
+  border-bottom: 1px solid #26344b;
+}
+
+.problem-table tbody tr:hover {
+  background: #19263a;
+}
+
+.solve-button, .delete-button {
+  background: transparent;
+  border: none;
+  color: #718198;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 3px;
+}
+
+.solve-button.is-solved {
+  color: #34d399;
+}
+
+.delete-button:hover {
+  color: #f87171;
+}
+
+.problem-solved {
+  color: #8290a5 !important;
+  text-decoration: line-through;
+}
+
+.topic-badge {
+  background: #252d56;
+  color: #a5b4fc;
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.difficulty-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 6px 9px;
+  border-radius: 6px;
+}
+
+.difficulty-badge.easy {
+  color: #6ee7b7;
+  background: #123c32;
+}
+
+.difficulty-badge.medium {
+  color: #fcd34d;
+  background: #47371b;
+}
+
+.difficulty-badge.hard {
+  color: #fca5a5;
+  background: #48242b;
+}
+
+.table-footer {
+  color: #8190a8;
+  font-size: 10px;
+  padding-top: 16px;
+}
+
+.empty-state {
+  padding: 35px 10px;
+  color: #8190a8;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media(max-width: 900px) {
+  .dsa-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .difficulty-bars {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media(max-width: 550px) {
+  .dsa-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dsa-filters {
+    flex-direction: column;
+  }
+
+  .dsa-filters select {
+    width: 100%;
+  }
+}

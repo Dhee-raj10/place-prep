@@ -1,4 +1,4 @@
-
+import DSA from "./DSA";
 import { useState } from "react";
 import {
   Code2, Target, Flame, Trophy,
